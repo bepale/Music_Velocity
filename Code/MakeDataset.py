@@ -60,9 +60,6 @@ def make_Data():
             if _[2]*4 < 0.125 : continue
             notes.append(_)
 
-        with open(f"pca/{i.split('.')[0]}.pickle", 'wb') as file:
-            pickle.dump(notes, file)
-
     # save data
     with open("Data.pickle",'wb') as file:
         pickle.dump(notes,file)
